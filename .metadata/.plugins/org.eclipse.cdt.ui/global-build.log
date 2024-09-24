@@ -1,0 +1,30 @@
+21:09:05 **** Incremental Build of configuration Debug for project CURT_Learrning_STM_Project ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:116:30: warning: passing argument 1 of 'HAL_GPIO_ReadPin' makes pointer from integer without a cast [-Wint-conversion]
+  116 |    if( HAL_GPIO_ReadPin(GPIOA->IDR, 1) == 0)
+In file included from ../Core/Inc/stm32f1xx_hal_conf.h:241,
+                 from ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:29,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h:233:46: note: expected 'GPIO_TypeDef *' but argument is of type 'uint32_t' {aka 'volatile long unsigned int'}
+  233 | GPIO_PinState HAL_GPIO_ReadPin(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin);
+      |                                ~~~~~~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "CURT_Learrning_STM_Project.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\a3abd\OneDrive\Desktop\CURT_Learning_STM_Project\CURT_Learrning_STM_Project\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="CURT_Learrning_STM_Project.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: CURT_Learrning_STM_Project.elf
+ 
+arm-none-eabi-objdump -h -S  CURT_Learrning_STM_Project.elf  > "CURT_Learrning_STM_Project.list"
+arm-none-eabi-objcopy  -O ihex  CURT_Learrning_STM_Project.elf  "CURT_Learrning_STM_Project.hex"
+arm-none-eabi-objcopy  -O binary  CURT_Learrning_STM_Project.elf  "CURT_Learrning_STM_Project.bin"
+arm-none-eabi-size   CURT_Learrning_STM_Project.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11340	     20	   1692	  13052	   32fc	CURT_Learrning_STM_Project.elf
+Finished building: default.size.stdout
+Finished building: CURT_Learrning_STM_Project.hex
+ 
+Finished building: CURT_Learrning_STM_Project.bin
+ 
+ 
+Finished building: CURT_Learrning_STM_Project.list
+ 
