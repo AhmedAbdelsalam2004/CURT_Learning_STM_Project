@@ -116,6 +116,7 @@ int main(void)
 	  if( HAL_GPIO_ReadPin(Switch_GPIO_Port, Switch_Pin) == 1)
 	  {
 		  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_2, ADC_Value);
+		  //HAL_Delay(3);
 	  }
 	  else
 	  {
@@ -126,9 +127,6 @@ int main(void)
 	  if( HAL_GPIO_ReadPin(Button_GPIO_Port, Button_Pin) == 1)
 	  {
 	  	  HAL_GPIO_WritePin(RedLed_GPIO_Port, RedLed_Pin, 1);
-	  	  HAL_GPIO_WritePin(RedLed_GPIO_Port, BlueLed_Pin, 0);
-	  	  HAL_GPIO_WritePin(GreenLed_GPIO_Port, GreenLed_Pin, 0);
-	  	  uwTick = 0;
 	  }
 
   }
@@ -149,6 +147,7 @@ void SysTick_Handler(void)
 	{
 		HAL_IncTick();
 	}
+
 
 
 

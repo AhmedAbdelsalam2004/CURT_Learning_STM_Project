@@ -98,6 +98,11 @@ int main(void)
 
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_2);
   HAL_ADC_Start(&hadc1);
+  /*SystemCoreClockUpdate();
+  SysTick_Config(SystemCoreClock/100);
+  SysTick -> CTRL = 0;
+  SysTick -> VAL  = 0;
+  SysTick -> CTRL = (SysTick_CTRL_CLKSOURCE_Msk | SysTick_CTRL_ENABLE_Msk | SysTick_CTRL_CLKSOURCE_Msk);*/
 
   /* USER CODE END 2 */
 
@@ -116,6 +121,7 @@ int main(void)
 	  if( HAL_GPIO_ReadPin(Switch_GPIO_Port, Switch_Pin) == 1)
 	  {
 		  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_2, ADC_Value);
+		  //HAL_Delay(3);
 	  }
 	  else
 	  {
@@ -126,9 +132,8 @@ int main(void)
 	  if( HAL_GPIO_ReadPin(Button_GPIO_Port, Button_Pin) == 1)
 	  {
 	  	  HAL_GPIO_WritePin(RedLed_GPIO_Port, RedLed_Pin, 1);
-	  	  HAL_GPIO_WritePin(RedLed_GPIO_Port, BlueLed_Pin, 0);
-	  	  HAL_GPIO_WritePin(GreenLed_GPIO_Port, GreenLed_Pin, 0);
-	  	  uwTick = 0;
+	  	  //HAL_SYSTICK_Config(1000);
+
 	  }
 
   }
@@ -145,10 +150,7 @@ void SysTick_Handler(void)
 	{
 		HAL_IncTick();
 	}
-	else if(HAL_GPIO_ReadPin(GreenLed_GPIO_Port, GreenLed_Pin) == 1)
-	{
-		HAL_IncTick();
-	}
+
 
 
 
@@ -164,11 +166,7 @@ void SysTick_Handler(void)
   	  uwTick = 0;
   	  HAL_GPIO_WritePin(BlueLed_GPIO_Port, GreenLed_Pin, 1);
   }
-  else if(uwTick >= 1000 && HAL_GPIO_ReadPin(GreenLed_GPIO_Port, GreenLed_Pin) == 1)
-  {
-      HAL_GPIO_WritePin(GreenLed_GPIO_Port, GreenLed_Pin, 0);
-      uwTick = 0;
-  }
+  //HAL_GPIO_WritePin(RedLed_GPIO_Port, RedLed_Pin, GPIO_PIN_RESET);
 }
 
 

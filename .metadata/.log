@@ -6161,3 +6161,707 @@ java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-2
 	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
 	at elf_analyzer.ElfAnalyzerView.lambda$6(ElfAnalyzerView.java:480)
 	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2024-09-25 22:22:13.907
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-c++filt": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.init(CxxFilt.java:55)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:36)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:40)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:348)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeMemConfig(BuildDataProviderMap.java:394)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:80)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$6(ElfAnalyzerView.java:480)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2024-09-25 22:22:14.151
+!MESSAGE Error while determining symbol line information
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-addr2line": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at org.eclipse.cdt.utils.Addr2line.init(Addr2line.java:56)
+	at org.eclipse.cdt.utils.Addr2line.<init>(Addr2line.java:37)
+	at org.eclipse.cdt.utils.Addr2line.<init>(Addr2line.java:41)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:857)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$16(StackAnalyzerView.java:1252)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2024-09-25 22:22:14.151
+!MESSAGE Stackanalyzer failed to analyze input
+!STACK 0
+java.lang.Exception: Failed to get disassembly from file: C:\Users\a3abd\OneDrive\Desktop\CURT_Learning_STM_Project\CURT_Learrning_STM_Project\Debug\CURT_Learrning_STM_Project.elf
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:69)
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:87)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:902)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$16(StackAnalyzerView.java:1252)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2024-09-25 22:22:14.206
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-c++filt": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.init(CxxFilt.java:55)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:36)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:40)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:348)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeLinkerSymbols(BuildDataProviderMap.java:402)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:102)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$6(ElfAnalyzerView.java:480)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2024-09-25 22:22:59.494
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-c++filt": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.init(CxxFilt.java:55)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:36)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:40)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:348)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeMemConfig(BuildDataProviderMap.java:394)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:80)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$6(ElfAnalyzerView.java:480)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2024-09-25 22:22:59.631
+!MESSAGE Error while determining symbol line information
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-addr2line": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at org.eclipse.cdt.utils.Addr2line.init(Addr2line.java:56)
+	at org.eclipse.cdt.utils.Addr2line.<init>(Addr2line.java:37)
+	at org.eclipse.cdt.utils.Addr2line.<init>(Addr2line.java:41)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:857)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$16(StackAnalyzerView.java:1252)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2024-09-25 22:22:59.633
+!MESSAGE Stackanalyzer failed to analyze input
+!STACK 0
+java.lang.Exception: Failed to get disassembly from file: C:\Users\a3abd\OneDrive\Desktop\CURT_Learning_STM_Project\CURT_Learrning_STM_Project\Debug\CURT_Learrning_STM_Project.elf
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:69)
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:87)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:902)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$16(StackAnalyzerView.java:1252)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2024-09-25 22:22:59.755
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-c++filt": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.init(CxxFilt.java:55)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:36)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:40)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:348)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeLinkerSymbols(BuildDataProviderMap.java:402)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:102)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$6(ElfAnalyzerView.java:480)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2024-09-25 22:24:15.570
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-c++filt": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.init(CxxFilt.java:55)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:36)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:40)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:348)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeMemConfig(BuildDataProviderMap.java:394)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:80)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$6(ElfAnalyzerView.java:480)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2024-09-25 22:24:15.718
+!MESSAGE Error while determining symbol line information
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-addr2line": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at org.eclipse.cdt.utils.Addr2line.init(Addr2line.java:56)
+	at org.eclipse.cdt.utils.Addr2line.<init>(Addr2line.java:37)
+	at org.eclipse.cdt.utils.Addr2line.<init>(Addr2line.java:41)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:857)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$16(StackAnalyzerView.java:1252)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2024-09-25 22:24:15.720
+!MESSAGE Stackanalyzer failed to analyze input
+!STACK 0
+java.lang.Exception: Failed to get disassembly from file: C:\Users\a3abd\OneDrive\Desktop\CURT_Learning_STM_Project\CURT_Learrning_STM_Project\Debug\CURT_Learrning_STM_Project.elf
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:69)
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:87)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:902)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$16(StackAnalyzerView.java:1252)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2024-09-25 22:24:15.829
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-c++filt": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.init(CxxFilt.java:55)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:36)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:40)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:348)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeLinkerSymbols(BuildDataProviderMap.java:402)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:102)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$6(ElfAnalyzerView.java:480)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2024-09-25 22:24:27.714
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-c++filt": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.init(CxxFilt.java:55)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:36)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:40)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:348)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeMemConfig(BuildDataProviderMap.java:394)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:80)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$6(ElfAnalyzerView.java:480)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2024-09-25 22:24:27.855
+!MESSAGE Error while determining symbol line information
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-addr2line": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at org.eclipse.cdt.utils.Addr2line.init(Addr2line.java:56)
+	at org.eclipse.cdt.utils.Addr2line.<init>(Addr2line.java:37)
+	at org.eclipse.cdt.utils.Addr2line.<init>(Addr2line.java:41)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:857)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$16(StackAnalyzerView.java:1252)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2024-09-25 22:24:27.857
+!MESSAGE Stackanalyzer failed to analyze input
+!STACK 0
+java.lang.Exception: Failed to get disassembly from file: C:\Users\a3abd\OneDrive\Desktop\CURT_Learning_STM_Project\CURT_Learrning_STM_Project\Debug\CURT_Learrning_STM_Project.elf
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:69)
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:87)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:902)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$16(StackAnalyzerView.java:1252)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2024-09-25 22:24:27.973
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-c++filt": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.init(CxxFilt.java:55)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:36)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:40)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:348)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeLinkerSymbols(BuildDataProviderMap.java:402)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:102)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$6(ElfAnalyzerView.java:480)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2024-09-25 22:25:39.163
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-c++filt": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.init(CxxFilt.java:55)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:36)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:40)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:348)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeMemConfig(BuildDataProviderMap.java:394)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:80)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$6(ElfAnalyzerView.java:480)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2024-09-25 22:25:39.322
+!MESSAGE Error while determining symbol line information
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-addr2line": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at org.eclipse.cdt.utils.Addr2line.init(Addr2line.java:56)
+	at org.eclipse.cdt.utils.Addr2line.<init>(Addr2line.java:37)
+	at org.eclipse.cdt.utils.Addr2line.<init>(Addr2line.java:41)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:857)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$16(StackAnalyzerView.java:1252)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2024-09-25 22:25:39.322
+!MESSAGE Stackanalyzer failed to analyze input
+!STACK 0
+java.lang.Exception: Failed to get disassembly from file: C:\Users\a3abd\OneDrive\Desktop\CURT_Learning_STM_Project\CURT_Learrning_STM_Project\Debug\CURT_Learrning_STM_Project.elf
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:69)
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:87)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:902)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$16(StackAnalyzerView.java:1252)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2024-09-25 22:25:39.440
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-c++filt": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.init(CxxFilt.java:55)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:36)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:40)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:348)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeLinkerSymbols(BuildDataProviderMap.java:402)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:102)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$6(ElfAnalyzerView.java:480)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2024-09-25 22:26:48.144
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-c++filt": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.init(CxxFilt.java:55)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:36)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:40)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:348)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeMemConfig(BuildDataProviderMap.java:394)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:80)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$6(ElfAnalyzerView.java:480)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2024-09-25 22:26:48.292
+!MESSAGE Error while determining symbol line information
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-addr2line": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at org.eclipse.cdt.utils.Addr2line.init(Addr2line.java:56)
+	at org.eclipse.cdt.utils.Addr2line.<init>(Addr2line.java:37)
+	at org.eclipse.cdt.utils.Addr2line.<init>(Addr2line.java:41)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:857)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$16(StackAnalyzerView.java:1252)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2024-09-25 22:26:48.294
+!MESSAGE Stackanalyzer failed to analyze input
+!STACK 0
+java.lang.Exception: Failed to get disassembly from file: C:\Users\a3abd\OneDrive\Desktop\CURT_Learning_STM_Project\CURT_Learrning_STM_Project\Debug\CURT_Learrning_STM_Project.elf
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:69)
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:87)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:902)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$16(StackAnalyzerView.java:1252)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2024-09-25 22:26:48.429
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-c++filt": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.init(CxxFilt.java:55)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:36)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:40)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:348)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeLinkerSymbols(BuildDataProviderMap.java:402)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:102)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$6(ElfAnalyzerView.java:480)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2024-09-25 22:28:12.520
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-c++filt": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.init(CxxFilt.java:55)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:36)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:40)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:348)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeMemConfig(BuildDataProviderMap.java:394)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:80)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$6(ElfAnalyzerView.java:480)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2024-09-25 22:28:12.671
+!MESSAGE Error while determining symbol line information
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-addr2line": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at org.eclipse.cdt.utils.Addr2line.init(Addr2line.java:56)
+	at org.eclipse.cdt.utils.Addr2line.<init>(Addr2line.java:37)
+	at org.eclipse.cdt.utils.Addr2line.<init>(Addr2line.java:41)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:857)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$16(StackAnalyzerView.java:1252)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2024-09-25 22:28:12.673
+!MESSAGE Stackanalyzer failed to analyze input
+!STACK 0
+java.lang.Exception: Failed to get disassembly from file: C:\Users\a3abd\OneDrive\Desktop\CURT_Learning_STM_Project\CURT_Learrning_STM_Project\Debug\CURT_Learrning_STM_Project.elf
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:69)
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:87)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:902)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$16(StackAnalyzerView.java:1252)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2024-09-25 22:28:12.787
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-c++filt": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.init(CxxFilt.java:55)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:36)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:40)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:348)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeLinkerSymbols(BuildDataProviderMap.java:402)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:102)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$6(ElfAnalyzerView.java:480)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2024-09-25 22:44:08.741
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-c++filt": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.init(CxxFilt.java:55)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:36)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:40)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:348)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeMemConfig(BuildDataProviderMap.java:394)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:80)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$6(ElfAnalyzerView.java:480)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2024-09-25 22:44:08.873
+!MESSAGE Error while determining symbol line information
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-addr2line": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at org.eclipse.cdt.utils.Addr2line.init(Addr2line.java:56)
+	at org.eclipse.cdt.utils.Addr2line.<init>(Addr2line.java:37)
+	at org.eclipse.cdt.utils.Addr2line.<init>(Addr2line.java:41)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:857)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$16(StackAnalyzerView.java:1252)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2024-09-25 22:44:08.873
+!MESSAGE Stackanalyzer failed to analyze input
+!STACK 0
+java.lang.Exception: Failed to get disassembly from file: C:\Users\a3abd\OneDrive\Desktop\CURT_Learning_STM_Project\CURT_Learrning_STM_Project\Debug\CURT_Learrning_STM_Project.elf
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:69)
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:87)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:902)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$16(StackAnalyzerView.java:1252)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2024-09-25 22:44:08.991
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-c++filt": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.init(CxxFilt.java:55)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:36)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:40)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:348)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeLinkerSymbols(BuildDataProviderMap.java:402)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:102)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$6(ElfAnalyzerView.java:480)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2024-09-25 22:44:15.571
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-c++filt": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.init(CxxFilt.java:55)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:36)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:40)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:348)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeMemConfig(BuildDataProviderMap.java:394)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:80)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$6(ElfAnalyzerView.java:480)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2024-09-25 22:44:15.701
+!MESSAGE Error while determining symbol line information
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-addr2line": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at org.eclipse.cdt.utils.Addr2line.init(Addr2line.java:56)
+	at org.eclipse.cdt.utils.Addr2line.<init>(Addr2line.java:37)
+	at org.eclipse.cdt.utils.Addr2line.<init>(Addr2line.java:41)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:857)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$16(StackAnalyzerView.java:1252)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2024-09-25 22:44:15.702
+!MESSAGE Stackanalyzer failed to analyze input
+!STACK 0
+java.lang.Exception: Failed to get disassembly from file: C:\Users\a3abd\OneDrive\Desktop\CURT_Learning_STM_Project\CURT_Learrning_STM_Project\Debug\CURT_Learrning_STM_Project.elf
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:69)
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:87)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:902)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$16(StackAnalyzerView.java:1252)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2024-09-25 22:44:15.803
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-c++filt": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.init(CxxFilt.java:55)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:36)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:40)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:348)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeLinkerSymbols(BuildDataProviderMap.java:402)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:102)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$6(ElfAnalyzerView.java:480)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2024-09-25 22:45:57.170
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-c++filt": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.init(CxxFilt.java:55)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:36)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:40)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:348)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeMemConfig(BuildDataProviderMap.java:394)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:80)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$6(ElfAnalyzerView.java:480)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2024-09-25 22:45:57.311
+!MESSAGE Error while determining symbol line information
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-addr2line": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at org.eclipse.cdt.utils.Addr2line.init(Addr2line.java:56)
+	at org.eclipse.cdt.utils.Addr2line.<init>(Addr2line.java:37)
+	at org.eclipse.cdt.utils.Addr2line.<init>(Addr2line.java:41)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:857)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$16(StackAnalyzerView.java:1252)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2024-09-25 22:45:57.312
+!MESSAGE Stackanalyzer failed to analyze input
+!STACK 0
+java.lang.Exception: Failed to get disassembly from file: C:\Users\a3abd\OneDrive\Desktop\CURT_Learning_STM_Project\CURT_Learrning_STM_Project\Debug\CURT_Learrning_STM_Project.elf
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:69)
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:87)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:902)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$16(StackAnalyzerView.java:1252)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2024-09-25 22:45:57.435
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-c++filt": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.init(CxxFilt.java:55)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:36)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:40)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:348)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeLinkerSymbols(BuildDataProviderMap.java:402)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:102)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$6(ElfAnalyzerView.java:480)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2024-09-25 22:46:47.518
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-c++filt": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.init(CxxFilt.java:55)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:36)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:40)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:348)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeMemConfig(BuildDataProviderMap.java:394)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:80)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$6(ElfAnalyzerView.java:480)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2024-09-25 22:46:47.663
+!MESSAGE Error while determining symbol line information
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-addr2line": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at org.eclipse.cdt.utils.Addr2line.init(Addr2line.java:56)
+	at org.eclipse.cdt.utils.Addr2line.<init>(Addr2line.java:37)
+	at org.eclipse.cdt.utils.Addr2line.<init>(Addr2line.java:41)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:857)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$16(StackAnalyzerView.java:1252)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.stackanalyzer 4 0 2024-09-25 22:46:47.663
+!MESSAGE Stackanalyzer failed to analyze input
+!STACK 0
+java.lang.Exception: Failed to get disassembly from file: C:\Users\a3abd\OneDrive\Desktop\CURT_Learning_STM_Project\CURT_Learrning_STM_Project\Debug\CURT_Learrning_STM_Project.elf
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:69)
+	at com.st.stm32cube.ide.mcu.utils.assembly.Disassembler.<init>(Disassembler.java:87)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.inputChanged(StackAnalyzerView.java:902)
+	at com.st.stm32cube.ide.mcu.stackanalyzer.ui.StackAnalyzerView.lambda$16(StackAnalyzerView.java:1252)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.st.stm32cube.ide.mcu.buildanalyzer.ui 1 0 2024-09-25 22:46:47.774
+!MESSAGE Failed to parse map file
+!STACK 0
+java.io.IOException: Cannot run program "C:\Users\a3abd\OneDrive\Desktop\Tools-20230714T050814Z-001\Tools\en.st-stm32cubeide_1.6.1_9958_20210326_1446_x86_64.exe\STM32CubeIDE_1.6.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\bin\arm-none-eabi-c++filt": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:352)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:94)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:124)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:116)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:67)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.init(CxxFilt.java:55)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:36)
+	at com.st.stm32cube.ide.mcu.externaltools.oss.exposed.CxxFilt.<init>(CxxFilt.java:40)
+	at elf_analyzer.datamodel.BuildDataProviderMap.compute(BuildDataProviderMap.java:348)
+	at elf_analyzer.datamodel.BuildDataProviderMap.computeLinkerSymbols(BuildDataProviderMap.java:402)
+	at elf_analyzer.datamodel.BuildData.compute(BuildData.java:102)
+	at elf_analyzer.ElfAnalyzerView.inputChanged(ElfAnalyzerView.java:252)
+	at elf_analyzer.ElfAnalyzerView.lambda$6(ElfAnalyzerView.java:480)
+	at java.base/java.lang.Thread.run(Unknown Source)
