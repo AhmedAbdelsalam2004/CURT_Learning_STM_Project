@@ -98,6 +98,11 @@ int main(void)
 
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_2);
   HAL_ADC_Start(&hadc1);
+  /*SystemCoreClockUpdate();
+  SysTick_Config(SystemCoreClock/100);
+  SysTick -> CTRL = 0;
+  SysTick -> VAL  = 0;
+  SysTick -> CTRL = (SysTick_CTRL_CLKSOURCE_Msk | SysTick_CTRL_ENABLE_Msk | SysTick_CTRL_CLKSOURCE_Msk);*/
 
   /* USER CODE END 2 */
 
@@ -113,19 +118,45 @@ int main(void)
 	  ADC_Value = HAL_ADC_GetValue(&hadc1);
 
 
-	  if( HAL_GPIO_ReadPin(GPIOA->IDR, 1) == 0)
+	  if( HAL_GPIO_ReadPin(Switch_GPIO_Port, Switch_Pin) == 1)
 	  {
 		  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_2, ADC_Value);
-		  HAL_Delay(3);
+		  //HAL_Delay(3);
 	  }
 	  else
 	  {
 		  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_2, 0);
 	  }
 
+
+	  if( HAL_GPIO_ReadPin(Button_GPIO_Port, Button_Pin) == 1)
+	  {
+	  	  HAL_GPIO_WritePin(RedLed_GPIO_Port, RedLed_Pin, 1);
+	  	  //HAL_SYSTICK_Config(1000);
+
+	  }
+
   }
   /* USER CODE END 3 */
 }
+
+void SysTick_Handler(void)
+{
+	if(HAL_GPIO_ReadPin(RedLed_GPIO_Port, RedLed_Pin) == 1)
+	{
+		HAL_IncTick();
+	}
+
+
+  if(uwTick >= 1000)
+  {
+	  HAL_GPIO_TogglePin(RedLed_GPIO_Port, RedLed_Pin);
+	  uwTick = 0;
+  }
+  //HAL_GPIO_WritePin(RedLed_GPIO_Port, RedLed_Pin, GPIO_PIN_RESET);
+}
+
+
 
 /**
   * @brief System Clock Configuration
@@ -286,11 +317,34 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
-  /*Configure GPIO pin : PA1 */
-  GPIO_InitStruct.Pin = GPIO_PIN_1;
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOB, RedLed_Pin|BlueLed_Pin|GreenLed_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin : Switch_Pin */
+  GPIO_InitStruct.Pin = Switch_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLDOWN;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+  HAL_GPIO_Init(Switch_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : Button_Pin */
+  GPIO_InitStruct.Pin = Button_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+  HAL_GPIO_Init(Button_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : RedLed_Pin */
+  GPIO_InitStruct.Pin = RedLed_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(RedLed_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : BlueLed_Pin GreenLed_Pin */
+  GPIO_InitStruct.Pin = BlueLed_Pin|GreenLed_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
 }
 
